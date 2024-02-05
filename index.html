@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <link rel="icon" type="image/svg" href="/logo.svg">
@@ -14,10 +14,10 @@
 <body>
   <header>
     <nav>
-      <div class="burger-menu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+      <div class="burger-menu" role="button" aria-label="Bouton d'ouverture du menu">
+        <div class="bar" aria-hidden="true"></div>
+        <div class="bar" aria-hidden="true"></div>
+        <div class="bar" aria-hidden="true"></div>
       </div>
       <ul>
         <li><a href="homepage.html">Accueil</a></li>
@@ -27,24 +27,20 @@
     </nav>
   </header>
   <main>
-    <div></div>
     <img src="/logo.svg" class="logo" alt="La Bonne Plante">
     <h1>Connexion</h1>
-    <form class="login-form" action="login.php" method="post">
+    <form class="login-form" action="login.html" method="get">
       <div>
         <label for="email" id="email-label">Adresse Email</label>
-        <input type="email" id="email" name="email" required aria-labelledby="email-label email-help">
+        <input type="email" id="email" name="email" required autofocus autocomplete="username">
         <small id="email-help">Veuillez entrer une adresse email valide.</small>
       </div>
       <div>
         <label for="password" id="password-label">Mot de passe</label>
-        <input type="password" id="password" name="password" required aria-labelledby="password-label password-help" role="textbox">
+        <input type="password" id="password" name="password" required role="textbox" autocomplete="current-password">
         <small id="password-help">Le mot de passe doit contenir au moins 8 caractères.</small>
       </div>
-<!--      <button type="submit">Se connecter</button>-->
-      <a href="homepage.html">
-        <button type="button" aria-label="Se connecter">Se connecter</button>
-      </a>
+      <button type="submit">Se connecter</button>
     </form>
 
   </main>
