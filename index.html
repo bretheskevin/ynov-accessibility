@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/svg" href="logo.svg"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="La Bonne Plante - Vente de plantes en ligne"/>
+  <title>La Bonne Plante - Login</title>
+  <link rel="stylesheet" href="src/style.css"/>
+  <link rel="stylesheet" href="src/nav.css"/>
+  <link rel="stylesheet" href="src/form.css"/>
+  <script src="src/nav.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="burger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul>
+        <li><a href="homepage.html">Accueil</a></li>
+        <li><a href="#">Produits</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div></div>
+    <img src="logo.svg" class="logo" alt="La Bonne Plante" class="logo"/>
+    <h1>Connexion</h1>
+    <form class="login-form" action="login.php" method="post">
+      <div>
+        <label for="email" id="email-label">Adresse Email</label>
+        <input type="email" id="email" name="email" required aria-labelledby="email-label email-help" role="textbox"/>
+        <small id="email-help">Veuillez entrer une adresse email valide.</small>
+      </div>
+      <div>
+        <label for="password" id="password-label">Mot de passe</label>
+        <input type="password" id="password" name="password" required aria-labelledby="password-label password-help" role="textbox"/>
+        <small id="password-help">Le mot de passe doit contenir au moins 8 caractères.</small>
+      </div>
+<!--      <button type="submit" role="button">Se connecter</button>-->
+      <a href="homepage.html">
+        <button type="button" role="button" aria-label="Se connecter">Se connecter</button>
+      </a>
+    </form>
+
+  </main>
+  <footer>
+    <p>&copy; 2021 La Bonne Plante</p>
+  </footer>
+</body>
+</html>
