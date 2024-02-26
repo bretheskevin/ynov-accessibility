@@ -37,8 +37,8 @@
       <small id="email-help">Veuillez entrer une adresse email valide.</small>
     </div>
     <div>
-      <label for="password" id="password-label">Mot de passe</label>
-      <input type="password" id="password" name="password" required autocomplete="current-password">
+      <label for="password" id="password-label" aria-describedby="password-help">Mot de passe</label>
+      <input type="password" id="password" name="password" minlength="8" required autocomplete="current-password">
       <small id="password-help">Le mot de passe doit contenir au moins 8 caractères.</small>
     </div>
     <button type="submit">Se connecter</button>
