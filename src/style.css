@@ -197,6 +197,15 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
+.login-title-container {
+    display: flex;
+    gap: 10px;
+}
+
+.login-logo {
+    width: 40px;
+}
+
 @media screen and (max-width: 768px) {
     .login-form {
         width: 80%;
@@ -267,6 +276,12 @@ nav a:hover {
     margin: 20px 0;
 }
 
+@media screen and (max-width: 600px) {
+    .article-section {
+        max-width: 90%;
+    }
+}
+
 /*article table*/
 
 .agenda-section {
@@ -323,7 +338,6 @@ tbody tr:hover {
     font-weight: bold;
 }
 
-/* Style pour le lien "Voir les commentaires" */
 .article-section a {
     display: block;
     margin-top: 20px;
